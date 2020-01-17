@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+
+.left-container{
+    background: #cccccc;
+    width: 100%;
+}
+
+.right-container{
+    background: #f3f3f3;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+{
+    "topics": [
+      { "id": 1, "title": "javascript", "description": "js description" },
+      { "id": 2, "title": "user interface", "description": "interface description" },
+      { "id": 3, "title": "photography", "description": "photography description" },
+      { "id": 4, "title": "automobiles", "description": "automobiles description" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
