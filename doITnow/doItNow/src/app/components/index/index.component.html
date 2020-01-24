@@ -1,3 +1,24 @@
-<p>
-  index works!
-</p>
+<div class="flex-block">
+
+  <div class="topics-block">
+    <ul>
+      <li *ngFor="let topic of topicsData" [class.active]="topic === selectedTopic">
+        <a (click)="topicClick(topic)">{{topic.topicName}}</a>
+        <span>{{topic.articles}} Articles</span>
+        <p>{{topic.topicDesc}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="articles-block">
+    <ul *ngIf="articlesData.length > 0; else noArticles">
+      <li *ngFor="let article of articlesData" (click)="articleClick(article)">{{article.articleName}}</li>
+    </ul>
+    <ng-template #noArticles>
+      <div class="empty-block">No Articles</div>
+
+    </ng-template>
+
+  </div>
+
+</div>

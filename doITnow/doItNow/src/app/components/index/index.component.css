@@ -1,0 +1,79 @@
+.flex-block {
+    justify-content: flex-end;
+}
+
+.topics-block {
+    width: 60%;
+    text-align: right;
+    max-width: 480px;
+    margin-right: 30px;
+}
+
+.topics-block ul li {
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #3c3b3b;
+}
+
+.topics-block ul li:last-child {
+    border-bottom: none;
+}
+
+.topics-block ul li a {
+    text-transform: uppercase;
+}
+
+.topics-block ul li.active {
+    color: #f14316;
+    font-size: 40px;
+    line-height: 32px;
+    text-shadow: -6px 2px 11px #000;
+}
+
+.topics-block ul li p {
+    display: none;
+}
+
+.topics-block ul li.active p {
+    font-size: 12px;
+    display: inline-block;
+    color: #8e8684;
+    line-height: 13px;
+    text-transform: none;
+}
+
+.topics-block ul li span {
+    display: block;
+    font-size: 13px;
+}
+
+.articles-block {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    box-shadow: 0 0 60px 0px #080808;
+    background: -webkit-gradient(linear, left top, right top, from(#212020), to(transparent));
+    background: linear-gradient(to right, #212020, transparent);
+    align-items: center;
+}
+
+.articles-block ul li {
+    color: #777777;
+    font-size: 14px;
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.articles-block ul li:hover {
+    font-size: 20px;
+    color: #f14316;
+}
+
+.empty-block{
+    padding: 20px;
+}
